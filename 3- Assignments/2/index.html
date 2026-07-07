@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio page showcasing my skills, courses, and contact information.">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <!-- ==================== Header + Navigation ==================== -->
+    <header>
+        <span><strong>Shrouk Negeda</strong></span>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#courses">Courses</a> |
+            <a href="#gallery">Gallery</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- ==================== Hero / About Section ==================== -->
+        <section id="about">
+            <h1>Hi, I'm Shrouk Negeda</h1>
+            <p>
+                I am a web development student learning <strong>HTML</strong>, <em>CSS</em>,
+                and JavaScript. I enjoy building simple projects and I am
+                <mark>passionate about frontend development</mark>.
+            </p>
+            <img src="./Img/IMG-20260610-WA0211.jpg" alt="Photo of Shrouk Negeda smiling" width="200"/>        
+        </section>
+
+        <hr>
+
+        <!-- ==================== Skills Section ==================== -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <p>Here is a list of the skills I currently have:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+            </ul>
+
+            <p>Here is the order in which I learned web development:</p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- ==================== Courses Table ==================== -->
+        <section id="courses">
+            <h2>My Courses</h2>
+
+            <table border="1" cellpadding="10" cellspacing="0">
+                <caption>List of courses I have taken during my training</caption>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML Fundamentals</td>
+                        <td>2 Weeks</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Fundamentals</td>
+                        <td>2 Weeks</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Basics</td>
+                        <td>3 Weeks</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td colspan="2">Not Started Yet</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Courses: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ==================== Gallery Section ==================== -->
+     <section id="gallery">
+        <h2>Gallery</h2>
+        <figure>
+            <img src="./Img/FirstTask.png" alt="Screenshot of my first HTML project" width="250">
+            <figcaption>My First HTML Project</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="./Img/SecondTask.jpeg" alt="Screenshot of my personal profile page project" width="250">
+            <figcaption>Profile Page Project</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="./Img/ThirdTask.jpeg" alt="Screenshot of my product catalog project" width="250">
+            <figcaption>Product Catalog Project</figcaption>
+        </figure>
+    </section>
+
+        <hr>
+
+        <!-- ==================== Contact Form Section ==================== -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <br><br>
+
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <br><br>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="job">Job Opportunity</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <br><br>
+
+                <span>Preferred Contact Method:</span>
+                <br>
+                <input type="radio" id="contact-email" name="contact-method" value="email">
+                <label for="contact-email">Email</label>
+                &nbsp;&nbsp;
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+                <br><br>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here"></textarea>
+                <br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ==================== FAQ Section ==================== -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What technologies do you know?</summary>
+                <p>I currently know HTML, CSS, and I am learning JavaScript.</p>
+            </details>
+
+            <details>
+                <summary>Are you available for freelance work?</summary>
+                <p>Yes, feel free to contact me through the form above.</p>
+            </details>
+
+            <details>
+                <summary>Where are you located?</summary>
+                <p>I am based in Egypt.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ==================== Footer ==================== -->
+    <footer>
+        <address>
+            Email: sh.ta.3366@gmail.com <br>
+            Location: Cairo, Egypt
+        </address>
+
+        <p>&copy; 2026 Shrouk Negeda. All rights reserved.</p>
+
+        <p>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Black Goose Bistro | Pizza-on-Demand</title>
+</head>
+<body>
+
+<a href="">Main</a>
+<a href="">Make an Order</a>
+<a href="">Contact Us</a>
+
+
+<h1>Black Goose Bistro | Pizza-on-Demand</h1>
+<p>Our 12" wood-fired pizza are available for delivery, build your custom pizza and we'll deliver it within an hour.</p>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Your Information</legend>
+
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>Telephone Number :</td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td valign="top">Delivery Instruction :</td>
+                <td><textarea name="instructions" rows="4" cols="30">No more than 400 character long</textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <h2>Design Your Dream Pizza:</h2>
+
+    <fieldset>
+        <legend>Pizza specs</legend>
+
+        <fieldset>
+            <legend>Crust (Choose one):</legend>
+            <p>
+                <input type="radio" name="crust" value="classic-white"> Classic White<br>
+                <input type="radio" name="crust" value="multigrain"> Multigrain<br>
+                <input type="radio" name="crust" value="cheese-stuffed"> Choose-stuffed crust<br>
+                <input type="radio" name="crust" value="gluten-free"> Gluten-free
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Toppings (Choose as many as you want):</legend>
+            <p>
+                <input type="checkbox" name="toppings" value="red-sauce"> Red Sauce<br>
+                <input type="checkbox" name="toppings" value="white-sauce"> White Sauce<br>
+                <input type="checkbox" name="toppings" value="mozzarella"> Mozzarella Cheese<br>
+                <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+                <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms<br>
+                <input type="checkbox" name="toppings" value="peppers"> Peppers<br>
+                <input type="checkbox" name="toppings" value="anchovies"> Anchovies
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Number</legend>
+            <p>
+                How many pizzas: <input type="text" name="quantity" size="5">
+            </p>
+        </fieldset>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Bring me a pizza!">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
