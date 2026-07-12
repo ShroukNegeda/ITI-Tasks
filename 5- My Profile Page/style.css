@@ -1,0 +1,278 @@
+:root {
+  --ink: #12232E;         
+  --paper: #F1E9DA;        
+  --gold: #C89B3C;        
+  --rust: #B5502D;         
+  --sky: #6E9CA6;          
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--paper);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+
+.site-header {
+  background:
+    var(--ink)
+    url("images/pattern.svg")
+    repeat
+    center / 60px
+    fixed;
+  color: var(--paper);
+  padding: 1.2em 6vw; 
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.brand-dot {
+  color: var(--gold);
+}
+
+.site-nav a {
+  margin-left: 1.5em;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.site-nav a:hover {
+  opacity: 1;
+  color: var(--gold);
+  cursor: pointer; 
+}
+
+.hero {
+  min-height: 70vh;              
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 6vw;
+  background-color: var(--paper);
+}
+
+.profile-image-wrap {
+  --ring-size: 190px;
+  width: var(--ring-size);
+  height: var(--ring-size);
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, var(--gold), var(--sky));
+  margin-bottom: 1.5rem;
+}
+
+#profileImage {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;   
+  max-width: 220px;    
+  border-radius: 50%;
+  border: 4px solid var(--paper);
+}
+
+.name {
+  font-size: clamp(2.2rem, 3rem + 1vw, 4rem); 
+  font-weight: 600;
+}
+
+.job-title {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--sky);
+  margin-top: 0.5em;
+  letter-spacing: 0.04em;
+}
+
+.divider {
+  width: 120px;
+  height: 4px;
+  margin-top: 2rem;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--gold) 0 8px,
+    var(--rust) 8px 16px
+  );
+  border-radius: 2px;
+}
+
+.about {
+  padding: 5rem 6vw;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.about-box {
+  width: 100%;
+  max-width: 100%;
+  height: 260px;          
+  min-height: 220px;
+  overflow-y: auto;       
+  padding: 1.5em;
+  background-color: #fff;
+  border: 1px solid rgba(18, 35, 46, 0.1);
+  border-radius: var(--radius);
+}
+
+.about-box p {
+  margin-bottom: 1em;
+}
+
+.highlight {
+  color: var(--gold) !important;
+  font-weight: 600;
+}
+
+.about p {
+  color: var(--ink);
+}
+
+.about-box > p:last-child {
+  margin-bottom: 0;
+}
+
+.info-icon {
+  font-size: 0.9rem;
+  color: var(--sky);
+  cursor: help; 
+}
+
+.skills {
+  padding: 3rem 6vw 5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-list li {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.skill-chip {
+  background-color: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.6em 1.1em;
+  cursor: grab;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.skill-chip:hover {
+  background-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.skill-chip--disabled {
+  opacity: 0.5;
+  cursor: not-allowed; 
+}
+
+.skill-chip--disabled:hover {
+  transform: none;
+  background-color: var(--paper);
+}
+
+.contact-cta {
+  text-align: center;
+  padding: 4rem 6vw 6rem;
+  background-color: var(--sky);
+  color: var(--paper);
+}
+
+.contact-lead {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.9em 2.2em;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--gold);  
+  color: var(--ink);
+  cursor: pointer;
+}
+
+#contactBtn {
+  background-color: var(--rust);  
+}
+
+.btn:hover {
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 6vw;
+  background-color: var(--ink);
+  color: var(--paper);
+  font-size: 0.85rem;
+}
