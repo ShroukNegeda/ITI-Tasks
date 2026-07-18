@@ -1,0 +1,170 @@
+:root {
+    --brown: rgb(137, 116, 88);
+    --dark: #1a1a1a;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+}
+
+.custom-navbar {
+    background-color: rgba(45, 45, 45, 0.75);
+    height: 70px;
+}
+
+.custom-navbar .nav-link {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--brown);
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url(../Images/drew-coffman-1872.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.btn-warm {
+    background-color: var(--brown);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-weight: bold;
+}
+
+.btn-warm:hover {
+    background-color: #6f5c45;
+    color: #fff;
+}
+
+.btn-outline-light {
+    padding: 12px 28px;
+    font-weight: bold;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+    margin-top: 20px;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.icon-item img {
+    width: 28px;
+    height: 28px;
+}
+
+.about1 {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+.our-baking {
+    background-color: #f9f9f9;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.item img {
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.information {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+.contact {
+    background-color: var(--dark);
+    color: #fff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-item h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--brown);
+    display: inline-block;
+}
+
+.contact-item p,
+.contact-item ul {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item ul {
+    list-style: none;
+}
+
+.under {
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 8px !important;
+}
+
+.icon2 {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+}

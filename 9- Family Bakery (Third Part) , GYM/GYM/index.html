@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GYM</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top crux-nav">
+    <div class="container-fluid px-4 d-flex align-items-center justify-content-between">
+        <a class="brand d-flex align-items-center gap-2" href="#">
+            <span class="brand-mark">◆</span>
+            <span class="brand-text">GYM</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto d-flex align-items-lg-center gap-lg-4">
+                <li class="nav-item"><a class="nav-link" href="#gym">The Gym</a></li>
+                <li class="nav-item"><a class="nav-link" href="#areas">Areas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#membership">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#setters">Setters</a></li>
+                <li class="nav-item"><a class="btn btn-crux ms-lg-2" href="#visit">Book a day pass</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <span class="grade-tag grade-yellow">V0&nbsp;–&nbsp;V12</span>
+                <h1 class="hero-title">Send your<br>project.</h1>
+                <p class="hero-sub">40+ boulder problems reset every week across three walls. No ropes, no rules — just you, the holds, and the next move.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#visit" class="btn btn-crux btn-lg">Book a day pass — $22</a>
+                    <a href="#areas" class="btn btn-crux-outline btn-lg">See the walls</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="hero-panel">
+                    <div class="hero-panel-row"><span>Today's reset</span><strong>Overhang Cave</strong></div>
+                    <div class="hero-panel-row"><span>Open now</span><strong>6:00a – 11:00p</strong></div>
+                    <div class="hero-panel-row"><span>Routes live</span><strong>147</strong></div>
+                    <div class="tape-row">
+                        <span class="grade-tag grade-yellow">V0–V2</span>
+                        <span class="grade-tag grade-teal">V3–V5</span>
+                        <span class="grade-tag grade-coral">V6+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="gym-stats py-5" id="gym">
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-num">40+</div>
+                    <p>Routes reset weekly</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-num">3</div>
+                    <p>Training &amp; climbing areas</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-num">12,000</div>
+                    <p>Sq ft of climbing surface</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-num">V0–V12</div>
+                    <p>Full grade range on tape</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="areas py-5" id="areas">
+    <div class="container py-4">
+        <p class="eyebrow">The walls</p>
+        <h2 class="section-title">Four areas. One membership.</h2>
+        <div class="areas-grid mt-5">
+            <div class="area-card tape-yellow">
+                <span class="grade-tag grade-yellow">Slab</span>
+                <h4>The Slab Wall</h4>
+                <p>Low-angle, technical footwork. Where most people learn to trust their feet instead of their arms.</p>
+            </div>
+            <div class="area-card tape-teal">
+                <span class="grade-tag grade-teal">Vertical</span>
+                <h4>Vertical Hall</h4>
+                <p>Straight-up walls, balanced movement, the widest grade spread in the gym — V0 through V8.</p>
+            </div>
+            <div class="area-card tape-coral">
+                <span class="grade-tag grade-coral">Overhang</span>
+                <h4>The Cave</h4>
+                <p>Steep, powerful, unforgiving. Bring chalk, bring tape, leave your ego at the mat.</p>
+            </div>
+            <div class="area-card tape-yellow">
+                <span class="grade-tag grade-yellow">Board</span>
+                <h4>Training Board</h4>
+                <p>Adjustable-angle board for projecting benchmarks and building raw finger strength.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="membership py-5" id="membership">
+    <div class="container py-4">
+        <p class="eyebrow eyebrow-light">Membership</p>
+        <h2 class="section-title section-title-light">Climb your way.</h2>
+        <div class="pricing-grid mt-5">
+            <div class="price-card">
+                <h4>Drop-in</h4>
+                <div class="price">$22<span>/session</span></div>
+                <ul>
+                    <li>Full gym access, one visit</li>
+                    <li>Rental shoes included</li>
+                    <li>No commitment</li>
+                </ul>
+                <a href="#visit" class="btn btn-crux-outline w-100">Book a visit</a>
+            </div>
+            <div class="price-card price-card-featured">
+                <span class="grade-tag grade-coral featured-tag">Most sent</span>
+                <h4>Unlimited</h4>
+                <div class="price">$89<span>/month</span></div>
+                <ul>
+                    <li>Unlimited climbing, any hour</li>
+                    <li>2 guest passes / month</li>
+                    <li>10% off gear &amp; chalk</li>
+                </ul>
+                <a href="#visit" class="btn btn-crux w-100">Join Unlimited</a>
+            </div>
+            <div class="price-card">
+                <h4>Unlimited + Coaching</h4>
+                <div class="price">$139<span>/month</span></div>
+                <ul>
+                    <li>Everything in Unlimited</li>
+                    <li>Weekly small-group coaching</li>
+                    <li>Priority board booking</li>
+                </ul>
+                <a href="#visit" class="btn btn-crux-outline w-100">Join with coaching</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="setters py-5" id="setters">
+    <div class="container py-4">
+        <p class="eyebrow">Route setters</p>
+        <h2 class="section-title">The people behind the plastic.</h2>
+        <div class="setters-grid mt-5">
+            <div class="setter-card">
+                <img class="setter-photo" src="./Images/setter-1.jpg" alt="Mara Ito">
+                <h5>Mara Ito</h5>
+                <p>Head Setter · Overhang specialist</p>
+            </div>
+            <div class="setter-card">
+                <img class="setter-photo" src="./Images/setter-2.jpg" alt="Dev Anand">
+                <h5>Dev Anand</h5>
+                <p>Setter · Slab &amp; technical movement</p>
+            </div>
+            <div class="setter-card">
+                <img class="setter-photo" src="./Images/setter-3.jpg" alt="Priya Nair">
+                <h5>Priya Nair</h5>
+                <p>Setter · Youth &amp; beginner programs</p>
+            </div>
+            <div class="setter-card">
+                <img class="setter-photo" src="./Images/setter-4.jpg" alt="Tomás Reyes">
+                <h5>Tomás Reyes</h5>
+                <p>Setter · Training board &amp; strength</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="visit py-5" id="visit">
+    <div class="container py-5 d-flex flex-column align-items-center text-center">
+        <p class="eyebrow eyebrow-light">Come try it</p>
+        <h2 class="section-title section-title-light">First send is on us.</h2>
+        <p class="visit-sub">New here? Your first day pass is free — shoes and chalk included. No experience needed, just shoes you don't mind scuffing.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center mt-2">
+            <a href="#" class="btn btn-crux btn-lg">Claim free day pass</a>
+            <a href="#" class="btn btn-crux-outline btn-lg">Get directions</a>
+        </div>
+    </div>
+</section>
+
+<footer class="crux-footer py-5">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between gap-4">
+            <div class="footer-brand">
+                <span class="brand d-flex align-items-center gap-2">
+                    <span class="brand-mark">◆</span>
+                    <span class="brand-text">CRUX</span>
+                </span>
+                <p class="mt-3">2114 Boulder Ave<br>Los Angeles, CA 90026</p>
+            </div>
+            <div class="footer-col">
+                <h6>Gym</h6>
+                <a href="#gym">The Gym</a>
+                <a href="#areas">Areas</a>
+                <a href="#setters">Setters</a>
+            </div>
+            <div class="footer-col">
+                <h6>Join</h6>
+                <a href="#membership">Membership</a>
+                <a href="#visit">Day pass</a>
+            </div>
+            <div class="footer-col">
+                <h6>Hours</h6>
+                <p>Mon–Fri&nbsp; 6:00a – 11:00p</p>
+                <p>Sat–Sun&nbsp; 8:00a – 9:00p</p>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between mt-5 pt-4">
+            <p>© 2026 CRUX Bouldering Co.</p>
+            <p>Chalk up. Send it. Repeat.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
