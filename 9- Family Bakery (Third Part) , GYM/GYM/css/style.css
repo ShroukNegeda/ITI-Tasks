@@ -150,7 +150,7 @@ a {
     padding-top: 110px;
     background:
         linear-gradient(160deg, rgba(35,42,51,0.82), rgba(35,42,51,0.6)),
-        url('../Images/hero-wall.jpg/') center/cover;
+        url('../Images/hero-wall.jpg') center/cover;
     color: var(--chalk);
 }
 
