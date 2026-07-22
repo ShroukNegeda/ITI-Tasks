@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Bonus - Employees Dashboard</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container my-4">
+        <h1 class="mb-4">ES6 Challenge #2 - Employees Dashboard</h1>
+
+        <!-- Part 1 -->
+        <h3>Part 1 - Loops</h3>
+        <button class="btn btn-primary mb-2" onclick="p1_for()">Names (for)</button>
+        <button class="btn btn-primary mb-2" onclick="p1_forOf()">Names (for...of)</button>
+        <button class="btn btn-primary mb-2" onclick="p1_forEach()">Names (forEach)</button>
+        <button class="btn btn-primary mb-2" onclick="p1_forIn()">Index (for...in)</button>
+        <button class="btn btn-primary mb-2" onclick="p1_active()">Active Employees (for)</button>
+        <pre id="p1Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 2 -->
+        <h3>Part 2 - ES6</h3>
+        <button class="btn btn-success mb-2" onclick="p2_arrow()">Arrow Function</button>
+        <button class="btn btn-success mb-2" onclick="p2_destructuring()">Destructuring</button>
+        <button class="btn btn-success mb-2" onclick="p2_spread()">Spread + country</button>
+        <button class="btn btn-success mb-2" onclick="p2_template()">Template Literal</button>
+        <pre id="p2Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 3 -->
+        <h3>Part 3 - map()</h3>
+        <button class="btn btn-warning mb-2" onclick="p3_names()">Names Only</button>
+        <button class="btn btn-warning mb-2" onclick="p3_salaries()">Salaries Only</button>
+        <button class="btn btn-warning mb-2" onclick="p3_nameDept()">Name (Dept)</button>
+        <button class="btn btn-warning mb-2" onclick="p3_raise()">+1000 Salary</button>
+        <pre id="p3Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 4 -->
+        <h3>Part 4 - filter()</h3>
+        <button class="btn btn-info mb-2" onclick="p4_salaryAbove7000()">Salary > 7000</button>
+        <button class="btn btn-info mb-2" onclick="p4_it()">IT Dept</button>
+        <button class="btn btn-info mb-2" onclick="p4_active()">Active Only</button>
+        <button class="btn btn-info mb-2" onclick="p4_ageBelow25()">Age < 25</button>
+        <button class="btn btn-info mb-2" onclick="p4_itAndSalary()">IT & Salary > 5000</button>
+        <pre id="p4Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 5 -->
+        <h3>Part 5 - find()</h3>
+        <button class="btn btn-secondary mb-2" onclick="p5_salaryAbove9000()">Salary > 9000</button>
+        <button class="btn btn-secondary mb-2" onclick="p5_hr()">First HR</button>
+        <button class="btn btn-secondary mb-2" onclick="p5_inactive()">First Inactive</button>
+        <button class="btn btn-secondary mb-2" onclick="p5_id100()">Employee id 100</button>
+        <pre id="p5Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 6 -->
+        <h3>Part 6 - Mixed Challenge</h3>
+        <button class="btn btn-primary mb-2" onclick="p6_activeNames()">Active Names</button>
+        <button class="btn btn-primary mb-2" onclick="p6_itNames()">IT Names</button>
+        <button class="btn btn-primary mb-2" onclick="p6_highSalaryNames()">Salary > 7000 Names</button>
+        <button class="btn btn-primary mb-2" onclick="p6_bonus()">Bonus 10%</button>
+        <button class="btn btn-primary mb-2" onclick="p6_firstLetters()">First Letters</button>
+        <pre id="p6Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 7 -->
+        <h3>Part 7 - Logical Thinking (Numbers)</h3>
+        <button class="btn btn-success mb-2" onclick="p7_above10()">Numbers > 10</button>
+        <button class="btn btn-success mb-2" onclick="p7_double()">Multiply x2</button>
+        <button class="btn btn-success mb-2" onclick="p7_firstAbove25()">First > 25</button>
+        <button class="btn btn-success mb-2" onclick="p7_printAll()">Print All</button>
+        <button class="btn btn-success mb-2" onclick="p7_strings()">"Number is X"</button>
+        <pre id="p7Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 8 -->
+        <h3>Part 8 - Object Challenge</h3>
+        <button class="btn btn-warning mb-2" onclick="p8_keys()">Keys (for...in)</button>
+        <button class="btn btn-warning mb-2" onclick="p8_values()">Values</button>
+        <button class="btn btn-warning mb-2" onclick="p8_addStock()">Add stock:15</button>
+        <button class="btn btn-warning mb-2" onclick="p8_destructuring()">Destructuring</button>
+        <pre id="p8Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Part 9 -->
+        <h3>Part 9 - Mini Dashboard</h3>
+        <button class="btn btn-dark mb-2" onclick="dashboard()">Run dashboard()</button>
+        <pre id="p9Output" class="bg-light p-2 border"></pre>
+
+        <hr>
+
+        <!-- Bonus -->
+        <h3>Bonus - reduce()</h3>
+        <button class="btn btn-danger mb-2" onclick="b_total()">Total Salaries</button>
+        <button class="btn btn-danger mb-2" onclick="b_average()">Average Salary</button>
+        <button class="btn btn-danger mb-2" onclick="b_highest()">Highest Salary</button>
+        <button class="btn btn-danger mb-2" onclick="b_activeCount()">Active Count</button>
+        <pre id="bonusOutput" class="bg-light p-2 border"></pre>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
