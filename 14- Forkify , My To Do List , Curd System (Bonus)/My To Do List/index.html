@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My To-Do List</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="head">
+    <h1>My To-Do List</h1>
+    <p class="subtitle" id="progressText">No tasks yet</p>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </header>
+
+  <form id="taskForm" novalidate>
+    <input type="hidden" id="taskId">
+    <input type="text" id="taskInput" name="task" placeholder="Add a new task..." autocomplete="off" required>
+    <button type="submit" id="submitBtn">Add</button>
+    <button type="button" id="cancelEditBtn" class="btn-ghost d-none">Cancel</button>
+  </form>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn is-active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="active">Active</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+    <button class="clear-completed" id="clearCompletedBtn">Clear completed</button>
+  </div>
+
+  <ul class="task-list" id="taskList"></ul>
+
+  <p class="empty-state d-none" id="emptyState">Nothing here — add your first task above.</p>
+
+</div>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

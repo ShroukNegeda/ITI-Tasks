@@ -1,0 +1,321 @@
+:root {
+  --bg:        #F4F7F3;
+  --ink:       #1F2A24;
+  --ink-soft:  #667368;
+  --surface:   #FFFFFF;
+  --line:      #E1E8DF;
+
+  --primary:    #2F9E7A;
+  --primary-dk: #24805F;
+  --amber:      #D98E3C;
+  --danger:     #D9534F;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 1.25rem;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 560px;
+}
+
+.head {
+  margin-bottom: 1.75rem;
+}
+
+.head h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin: 0 0 0.3rem;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--primary);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+#taskForm {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+#taskInput {
+  flex: 1 1 220px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#taskInput:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(47, 158, 122, 0.15);
+}
+
+#submitBtn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0 1.4rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#submitBtn:hover {
+  background: var(--primary-dk);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1.5px solid var(--line);
+  color: var(--ink-soft);
+  border-radius: 10px;
+  padding: 0 1.2rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-ghost:hover {
+  background: var(--line);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: var(--line);
+}
+
+.filter-btn.is-active {
+  background: rgba(47, 158, 122, 0.12);
+  color: var(--primary-dk);
+  font-weight: 600;
+}
+
+.clear-completed {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--danger);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.85rem;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 12px rgba(31, 42, 36, 0.06);
+}
+
+.task-item.is-completed {
+  opacity: 0.6;
+}
+
+.task-item.is-completed .task-text {
+  text-decoration: line-through;
+  color: var(--ink-soft);
+}
+
+.task-checkbox {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  background: var(--surface);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  padding: 0;
+}
+
+.task-checkbox svg {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  color: #fff;
+}
+
+.task-item.is-completed .task-checkbox {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.task-item.is-completed .task-checkbox svg {
+  opacity: 1;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.task-text-input {
+  flex: 1;
+  border: 1.5px solid var(--primary);
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ink-soft);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: var(--line);
+}
+
+.icon-btn.edit:hover {
+  color: var(--amber);
+}
+
+.icon-btn.delete:hover {
+  color: var(--danger);
+}
+
+.icon-btn.save {
+  color: var(--primary);
+}
+
+.icon-btn.save:hover {
+  background: rgba(47, 158, 122, 0.12);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  padding: 2.5rem 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .task-item, #submitBtn, .progress-fill {
+    transition: none;
+  }
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 420px) {
+  #taskForm {
+    flex-direction: column;
+  }
+
+  #submitBtn, .btn-ghost {
+    padding: 0.7rem 0;
+  }
+}
