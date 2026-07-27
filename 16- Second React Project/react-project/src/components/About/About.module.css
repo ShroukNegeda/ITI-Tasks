@@ -1,0 +1,29 @@
+.section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.text {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 24px 20px 60px;
+  }
+}

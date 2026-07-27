@@ -1,0 +1,42 @@
+:root {
+  --bg: #FAF9FF;
+  --surface: #FFFFFF;
+  --ink: #211D35;
+  --muted: #7A7591;
+  --line: #E8E5F5;
+  --accent: #6C5CE7;
+  --accent-ink: #FFFFFF;
+  --warn: #FF6B6B;
+  --warn-bg: #FFF1F1;
+  --radius: 14px;
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+}

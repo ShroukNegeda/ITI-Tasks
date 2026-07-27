@@ -1,0 +1,142 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 40px;
+  background: rgba(250, 249, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.link:hover {
+  color: var(--ink);
+}
+
+.linkActive {
+  color: var(--ink);
+}
+
+.disabled {
+  color: #C7C3DA;
+  cursor: not-allowed;
+}
+
+.dropdownWrap {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 6px;
+  min-width: 180px;
+  box-shadow: 0 12px 24px -8px rgba(33, 29, 53, 0.15);
+  display: none;
+  flex-direction: column;
+}
+
+.dropdownWrap:hover .dropdown,
+.dropdownWrap:focus-within .dropdown {
+  display: flex;
+}
+
+.dropdownItem {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdownItem:hover {
+  background: var(--bg);
+}
+
+.divider {
+  height: 1px;
+  background: var(--line);
+  margin: 4px 0;
+  border: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchInput {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 14px;
+  background: var(--surface);
+  color: var(--ink);
+  width: 160px;
+}
+
+.searchInput:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.searchBtn {
+  border: none;
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.searchBtn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 14px 20px;
+  }
+  .search {
+    width: 100%;
+    order: 3;
+  }
+  .searchInput {
+    flex: 1;
+  }
+}

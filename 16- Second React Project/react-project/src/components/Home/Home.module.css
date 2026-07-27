@@ -1,0 +1,92 @@
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 40px 20px;
+}
+
+.counterCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.counterCardWarn {
+  background: var(--warn-bg);
+  border-color: rgba(255, 107, 107, 0.35);
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.count {
+  font-family: var(--font-mono);
+  font-size: 56px;
+  font-weight: 700;
+  margin: 8px 0 20px;
+  color: var(--ink);
+}
+
+.counterCardWarn .count {
+  color: var(--warn);
+}
+
+.button {
+  border: none;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.counterCardWarn .button {
+  background: var(--warn);
+}
+
+.fruitsTitle {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.fruits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.fruit {
+  background: rgba(108, 92, 231, 0.1);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding: 24px 20px 10px;
+  }
+}
