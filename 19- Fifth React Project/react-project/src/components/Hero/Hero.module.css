@@ -1,0 +1,21 @@
+.hero {
+    padding: 56px 20px;
+}
+
+.badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    background: var(--ink);
+    color: var(--accent);
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 280px;
+    border-radius: 16px;
+    border: 6px solid var(--surface);
+    box-shadow: 0 16px 40px rgba(28, 35, 33, 0.15);
+}

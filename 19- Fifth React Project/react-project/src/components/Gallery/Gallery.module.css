@@ -1,0 +1,45 @@
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 64px 20px;
+    text-align: center;
+}
+
+.homeLink {
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.homeLink:hover { color: var(--ink); }
+
+.statRow {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.stat {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 24px;
+    min-width: 140px;
+}
+
+.stat .label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+}
+
+.stat .value {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 4px;
+}

@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--ink);
+    color: var(--bg);
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: 60px;
+}
+
+.footer p {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: #9CA8A2;
+    margin: 6px 0 0;
+}

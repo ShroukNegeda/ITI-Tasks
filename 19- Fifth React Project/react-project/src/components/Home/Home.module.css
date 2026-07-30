@@ -1,0 +1,54 @@
+.wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 20px;
+}
+
+.wrapper h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--ink-soft);
+    margin-bottom: 32px;
+}
+
+.console {
+    background: var(--ink);
+    color: #E8EAE6;
+    border-radius: 10px;
+    padding: 24px 28px;
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    text-align: left;
+    line-height: 2;
+}
+
+.console .key {
+    color: #9CA8A2;
+}
+
+.console .val {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.counterRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+    justify-content: center;
+}
+
+.counterValue {
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px 18px;
+    min-width: 60px;
+}

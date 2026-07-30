@@ -1,0 +1,16 @@
+.wrapper {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.wrapper img {
+    max-width: 340px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+}
+
+.code {
+    font-family: var(--font-mono);
+    color: var(--ink-soft);
+    margin-top: 16px;
+}
