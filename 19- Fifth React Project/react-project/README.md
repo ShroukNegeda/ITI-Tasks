@@ -14,7 +14,7 @@ The visual identity is themed around the idea of a **developer's session log**: 
 - **Register** — a form with client-side validation, loading state, and toast notifications on success/failure
 - **404 page** — friendly not-found screen for unmatched routes
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - [React 18](https://react.dev/) with functional components and hooks
 - [React Router v6](https://reactrouter.com/) for client-side routing
